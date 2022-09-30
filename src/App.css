@@ -13,6 +13,10 @@ html {
   position: relative;
   min-height: 100%;
 }
+body {
+  height: 100%;
+  font-size: 1.6rem;
+}
 
 header {
   font-size: 2rem;
@@ -27,3 +31,21 @@ header {
   gap: 5rem;
 }
 
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+.signature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  gap: 0.5rem
+}
