@@ -28,7 +28,16 @@ header {
 
 .score-board {
   display: flex;
-  gap: 5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.scores {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
 }
 
 
