@@ -1,12 +1,12 @@
 import React from 'react'
 import Scoreboard from './scoreboard/Score'
+import CardContainer from './cards/CardContainer'
 
 const Main = () => {
   return (
     <div>
         <Scoreboard />
-        <div>Card Grid</div>
-
+        <CardContainer />
     </div>
   )
 }
