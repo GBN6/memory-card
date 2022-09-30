@@ -1,9 +1,11 @@
 import './App.css';
+import Header from './components/Header';
 
-function App() {
+const App = (props) => {
+
   return (
     <div className="App">
-      hello world
+      <Header />
     </div>
   );
 }
