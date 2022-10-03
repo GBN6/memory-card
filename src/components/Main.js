@@ -4,7 +4,6 @@ import CardContainer from './cards/CardContainer';
 import charactersCards from './cards/CharacterCards';
 
 const Main = () => {
-  const cardsAmount = 12;
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
   const [cards, setCards] = useState(charactersCards);
@@ -23,8 +22,19 @@ const Main = () => {
     setScore(0);
   };
 
-  const handleRound = (e) => {
+  const shuffle = (card) => {
+    console.log(card)
+    console.log([...card].sort(() => Math.random() - 0.5))
+    return [...card].sort(() => Math.random() - 0.5)
+  };
+
+  const handleCardClick = (e) => {
     const cardName = e.target.parentNode.lastChild.textContent;
+    handlePlayRound(cardName)
+    setCards(shuffle(cards))
+  }
+
+  const handlePlayRound = (cardName) => {
     if (!clickedCards.includes(cardName)) {
       setClickedCards((prevState) => [...prevState, cardName]);
       handleScore();
@@ -39,7 +49,7 @@ const Main = () => {
   return (
     <div className='main'>
       <Scoreboard score={score} highScore={highScore} />
-      <CardContainer cards={cards} handleCardClick={handleRound} />
+      <CardContainer cards={cards} handleCardClick={handleCardClick} />
     </div>
   );
 };
