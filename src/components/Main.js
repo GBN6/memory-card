@@ -1,21 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Scoreboard from './scoreboard/Score';
 import CardContainer from './cards/CardContainer';
+import charactersCards from './cards/CharacterCards';
 
 const Main = () => {
-  const cardsAmount = 9;
+  const cardsAmount = 12;
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
-  const [cards, setCards] = useState([]);
+  const [cards, setCards] = useState(charactersCards);
   const [clickedCards, setClickedCards] = useState([]);
-
-  useEffect(() => {
-    let cardsArray = [];
-    for (let i = 0; i < cardsAmount; i++) {
-      cardsArray.push({ name: i });
-    }
-    setCards(cardsArray);
-  }, []);
 
   const handleScore = () => {
     setScore((prevScore) => prevScore + 1);
@@ -44,7 +37,7 @@ const Main = () => {
   };
 
   return (
-    <div>
+    <div className='main'>
       <Scoreboard score={score} highScore={highScore} />
       <CardContainer cards={cards} handleCardClick={handleRound} />
     </div>
