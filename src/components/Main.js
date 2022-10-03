@@ -23,8 +23,6 @@ const Main = () => {
   };
 
   const shuffle = (card) => {
-    console.log(card)
-    console.log([...card].sort(() => Math.random() - 0.5))
     return [...card].sort(() => Math.random() - 0.5)
   };
 

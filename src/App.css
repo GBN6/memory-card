@@ -22,10 +22,11 @@ body {
 
 .background-image {
   background-image: url(./assets/bg.png);
-  /* background-image: linear-gradient(to right, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url(./bg.jpg); */
+  background-image: linear-gradient(to right, rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(./assets/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   display: block;
   filter: blur(2px);
   -webkit-filter: blur(2px);
@@ -148,4 +149,46 @@ footer {
   justify-content: center;
   font-size: 1.8rem;
   gap: 0.5rem
+}
+
+
+/* MEDIA  */
+
+@media (max-width: 750px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+}
+@media (max-width: 550px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    width: 150px;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .card-img {
+    height: 200px;
+  }
+  .card-title {
+    font-size: 2rem;
+  }
+
+  .current-score, .high-score {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  header img {
+    width: 300px;
+  }
+  
 }
