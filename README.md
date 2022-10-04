@@ -1,4 +1,4 @@
-# CV Generator
+# Memory Card Game
 Second React project. Memory Card Game. Recreation of [THIS PROJECT](https://heldersrvio.github.io/memory-card-game/). Click each card only once to score points
 
 # LIVE VERSION
