@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Scoreboard from './scoreboard/Score';
 import CardContainer from './cards/CardContainer';
 import charactersCards from './cards/CharacterCards';
