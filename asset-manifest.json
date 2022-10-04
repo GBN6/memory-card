@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.defbe4f4.css",
+    "main.js": "/memory-card/static/js/main.e66e7ed3.js",
+    "static/media/piccolo.png": "/memory-card/static/media/piccolo.f2e709d239db64238cb7.png",
+    "static/media/goku.png": "/memory-card/static/media/goku.3399d33d614eee5cd338.png",
+    "static/media/raditz.png": "/memory-card/static/media/raditz.e2723780437ec92215d0.png",
+    "static/media/krillan.png": "/memory-card/static/media/krillan.1eb9fe16ee4190832b54.png",
+    "static/media/nappa.png": "/memory-card/static/media/nappa.c82b26d0e30e18e4c8c6.png",
+    "static/media/frieza.png": "/memory-card/static/media/frieza.db7989d3f0a7cf3817af.png",
+    "static/media/tien.png": "/memory-card/static/media/tien.5f36bc4816899e254c1d.png",
+    "static/media/brolly.png": "/memory-card/static/media/brolly.9122548d141c005a5f51.png",
+    "static/media/pan.png": "/memory-card/static/media/pan.f70b0f703e06e16d9503.png",
+    "static/media/gohan.png": "/memory-card/static/media/gohan.73fe33e7b14c0351813d.png",
+    "static/media/bg.png": "/memory-card/static/media/bg.3f8e4a93b8394a2f7491.png",
+    "static/media/trunks.jpeg": "/memory-card/static/media/trunks.9a0a5719f934696929f9.jpeg",
+    "static/media/vegeta.jpeg": "/memory-card/static/media/vegeta.95ab124407a5715bc1da.jpeg",
+    "static/media/title.png": "/memory-card/static/media/title.208e82649aa0be69f90d.png",
+    "index.html": "/memory-card/index.html",
+    "main.defbe4f4.css.map": "/memory-card/static/css/main.defbe4f4.css.map",
+    "main.e66e7ed3.js.map": "/memory-card/static/js/main.e66e7ed3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.defbe4f4.css",
+    "static/js/main.e66e7ed3.js"
+  ]
+}
